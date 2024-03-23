@@ -1,0 +1,76 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Section from '@/components/Section.astro';
+import Typography from '@/components/Typography.astro';
+import Languages from '@/components/Languages.astro';
+
+import { getI18N } from '@/i18n';
+const { currentLocale } = Astro;
+const i18n = getI18N(currentLocale);
+
+const date = new Date().toLocaleDateString(currentLocale, {
+	day: 'numeric',
+	month: 'long',
+	year: 'numeric',
+});
+---
+
+<Layout title={i18n.seo.title}>
+	<main
+		class="w-full min-h-screen flex flex-col items-center justify-center px-8 py-32 gap-24"
+	>
+		<Section>
+			<Languages />
+			<h1
+				class="text-4xl underline decoration-wavy decoration-primary underline-offset-[16px] mb-8"
+			>
+				{i18n.section1.title}
+			</h1>
+			<Typography classNames="text-xs opacity-50 pb-8">
+				{i18n.section1.lastUpdate}<time>{date}</time>
+			</Typography>
+			<Typography>
+				{i18n.section1.p1}
+			</Typography>
+			<Typography>
+				{i18n.section1.p2}
+				<span
+					class="underline decoration-wavy decoration-primary underline-offset-4"
+				>
+					{i18n.section1.span}.
+				</span>
+			</Typography>
+			<Typography>
+				{i18n.section1.p3}
+			</Typography>
+		</Section>
+		<Section title={i18n.section2.title}>
+			<Typography>
+				{i18n.section2.p1}
+
+				<ul class="list-disc pl-8">
+					<li>{i18n.section2.li1}</li>
+					<li>{i18n.section2.li2}</li>
+				</ul>
+			</Typography>
+		</Section>
+		<Section title={i18n.section3.title}>
+			<Typography>
+				{i18n.section3.p1}
+			</Typography>
+			<Typography>
+				{i18n.section3.p2}
+			</Typography>
+		</Section>
+		<Section title={i18n.section4.title}>
+			<Typography>
+				{i18n.section4.p1}
+			</Typography>
+		</Section>
+		<Section title={i18n.section5.title}>
+			<Typography>
+				{i18n.section5.p1}
+			</Typography>
+		</Section>
+	</main>
+</Layout>

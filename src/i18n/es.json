@@ -1,0 +1,32 @@
+{
+    "seo": {
+        "title": "Politica de privacidad | Monospace"
+    },
+    "section1": {
+        "title": "Politica de privacidad",
+        "lastUpdate": "Ultima actualización: ",
+        "p1": "Nos tomamos muy en serio la privacidad de nuestros usuarios. En esta política de privacidad se describe que tipo de datos podemos recopilar sobre usted en relación con su uso de nuestras aplicaciones y/o servicios, y cómo podemos utilizar dichos datos.",
+        "p2": "A continuación, los denominamos colectivamente ",
+        "span": "\"Servicios\"",
+        "p3": "Al utilizar nuestros Servicios, usted acepta el tratamiento de sus datos de acuerdo con esta política de privacidad."
+    },
+    "section2": {
+        "title": "¿Cómo y cuándo podemos recopilar datos sobre usted?",
+        "p1": "Podemos recopilar datos personales que lo identifiquen si usted:",
+        "li1": "Se pone en contacto con nosotros.",
+        "li2": "Utiliza nuestros servicios."
+    },
+    "section3": {
+        "title": "¿Cómo utilizamos sus datos?",
+        "p1": "Estos datos se utilizan exclusivamente con el propósito de mejorar nuestros servicios y facilitar la comunicación con usted.",
+        "p2": "No compartimos sus datos con terceros."
+    },
+    "section4": {
+        "title": "Cambios en la política de privacidad",
+        "p1": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Si decidimos cambiar nuestra política de privacidad, publicaremos esos cambios en esta página."
+    },
+    "section5": {
+        "title": "Su aceptación de estos términos",
+        "p1": "Al utilizar nuestros servicios, usted manifiesta su aceptación de esta política. Si no está de acuerdo con esta política, no utilice nuestros servicios. Su uso continuado de nuestros servicios después de la publicación de cambios a esta política se considerará su aceptación de dichos cambios."
+    }
+}

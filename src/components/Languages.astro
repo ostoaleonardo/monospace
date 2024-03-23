@@ -1,0 +1,33 @@
+---
+const { currentLocale } = Astro;
+
+const languages = [
+	{
+		code: 'en',
+		path: '/privacy-policy',
+	},
+	{
+		code: 'es',
+		path: '/es/privacy-policy',
+	},
+];
+---
+
+<div class="absolute top-0 right-0 flex gap-2">
+	{
+		languages.map(({ code, path }) => (
+			<a
+				href={path}
+				class:list={[
+					'font-mono-light opacity-50',
+					{
+						'underline decoration-wavy decoration-primary opacity-100':
+							currentLocale === code,
+					},
+				]}
+			>
+				{code}
+			</a>
+		))
+	}
+</div>

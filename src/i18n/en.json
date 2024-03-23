@@ -1,0 +1,32 @@
+{
+    "seo": {
+        "title": "Privacy Policy | Monospace"
+    },
+    "section1": {
+        "title": "Privacy Policy",
+        "lastUpdate": "Last update: ",
+        "p1": "We take the privacy of our users very seriously. This privacy policy describes what kind of data we may collect about you in connection with your use of our applications and/or services, and how we may use such data.",
+        "p2": "Hereinafter, we collectively refer to them as ",
+        "span": "\"Services\"",
+        "p3": "By using our Services, you agree to the processing of your data in accordance with this privacy policy."
+    },
+    "section2": {
+        "title": "How and when can we collect data about you?",
+        "p1": "We may collect personal data that identifies you if you:",
+        "li1": "Contact us.",
+        "li2": "Use our services."
+    },
+    "section3": {
+        "title": "How do we use your data?",
+        "p1": "We use your data solely for the purpose of improving our services and facilitating communication with you.",
+        "p2": "We do not share your data with third parties."
+    },
+    "section4": {
+        "title": "Changes to the privacy policy",
+        "p1": "We reserve the right to modify this privacy policy at any time. If we decide to change our privacy policy, we will post those changes on this page."
+    },
+    "section5": {
+        "title": "Your acceptance of these terms",
+        "p1": "By using our services, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our services. Your continued use of our services following the posting of changes to this policy will be deemed your acceptance of those changes."
+    }
+}
