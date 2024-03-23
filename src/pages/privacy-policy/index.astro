@@ -1,0 +1,83 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Section from '@/components/Section.astro';
+import Typography from '@/components/Typography.astro';
+
+const date = new Date().toLocaleDateString('es', {
+	day: 'numeric',
+	month: 'long',
+	year: 'numeric',
+});
+---
+
+<Layout title="Politica de privacidad | Monospace">
+	<main
+		class="w-full min-h-screen flex flex-col items-center justify-center px-8 py-32 gap-24"
+	>
+		<Section>
+			<h1
+				class="text-4xl underline decoration-wavy decoration-primary underline-offset-[16px] mb-8"
+			>
+				Política de privacidad
+			</h1>
+			<Typography classNames="text-xs opacity-50 pb-8">
+				Última actualización: <time>{date}</time>
+			</Typography>
+			<Typography>
+				Nos tomamos muy en serio la privacidad de nuestros usuarios. En
+				esta política de privacidad se describe que tipo de datos
+				podemos recopilar sobre usted en relación con su uso de nuestras
+				aplicaciones y/o servicios, y cómo podemos utilizar dichos
+				datos.
+			</Typography>
+			<Typography>
+				A continuación, los denominamos colectivamente
+				<span
+					class="underline decoration-wavy decoration-primary underline-offset-4"
+				>
+					"Servicios"
+				</span>
+				.
+			</Typography>
+			<Typography>
+				Al utilizar nuestros Servicios, usted acepta el tratamiento de
+				sus datos de acuerdo con esta política de privacidad.
+			</Typography>
+		</Section>
+		<Section title="¿Cómo y cuándo podemos recopilar datos sobre usted?">
+			<Typography>
+				Podemos recopilar datos personales que lo identifiquen si usted:
+
+				<ul class="list-disc pl-8">
+					<li>Se pone en contacto con nosotros.</li>
+					<li>Utiliza nuestros servicios.</li>
+				</ul>
+			</Typography>
+		</Section>
+		<Section title="¿Cómo utilizamos sus datos?">
+			<Typography>
+				Estos datos se utilizan exclusivamente con el propósito de
+				mejorar nuestros servicios y facilitar la comunicación con
+				usted.
+			</Typography>
+			<Typography> No compartimos sus datos con terceros. </Typography>
+		</Section>
+		<Section title="Cambios a esta declaración de privacidad">
+			<Typography>
+				Tenemos la discreción de actualizar esta política de privacidad
+				en cualquier momento. Usted reconoce y acepta que es su
+				responsabilidad revisar esta política de privacidad
+				periódicamente y estar al tanto de las modificaciones.
+			</Typography>
+		</Section>
+		<Section title="Su aceptación de estos términos">
+			<Typography>
+				Al utilizar nuestros servicios, usted manifiesta su aceptación
+				de esta política. Si no está de acuerdo con esta política, no
+				utilice nuestros servicios. Su uso continuado de nuestros
+				servicios después de la publicación de cambios a esta política
+				se considerará su aceptación de dichos cambios.
+			</Typography>
+		</Section>
+	</main>
+</Layout>

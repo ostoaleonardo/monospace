@@ -1,18 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Monospace">
-	<main>
+	<main class="w-screen h-screen flex items-center justify-center">
+		<h1 class="text-6xl text-white font-medium font-mono">monospace</h1>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		font-size: 24px;
-		max-width: calc(100% - 2rem);
-	}
-</style>

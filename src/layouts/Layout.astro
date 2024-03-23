@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import '@fontsource-variable/roboto-mono';
 ---
 
 <!doctype html>
@@ -26,8 +28,15 @@ const { title } = Astro.props;
 		--text: #ffffff;
 		--background: #09090b;
 	}
+
 	html {
 		background: var(--background);
-		font-family: monospace;
+		font-family: 'Roboto Mono Variable', monospace;
+		color-scheme: light dark;
+	}
+
+	.font-mono-light {
+		font-family: 'Roboto Mono Variable', monospace;
+		font-weight: 300;
 	}
 </style>
