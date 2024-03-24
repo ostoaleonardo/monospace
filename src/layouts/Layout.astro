@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import '@fontsource-variable/roboto-mono';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!doctype html>
@@ -17,6 +18,7 @@ import '@fontsource-variable/roboto-mono';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<slot />
