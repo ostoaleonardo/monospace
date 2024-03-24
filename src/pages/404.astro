@@ -1,17 +1,16 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Button from '@/components/Button.astro';
-
-import { getI18N } from '@/i18n';
-const { currentLocale } = Astro;
-const i18n = getI18N(currentLocale);
 ---
 
 <Layout title="Monospace">
 	<main class="w-screen h-screen flex flex-col items-center justify-center">
-		<h1 class="text-6xl font-medium">monospace</h1>
-		<Button href="/privacy-policy" classNames="mt-16">
-			{i18n.section1.title}
+		<span class="text-9xl font-medium undesrline decoration-primary">
+			404
+		</span>
+		<h1 class="text-4xl">Not found</h1>
+		<Button href="/" classNames="mt-16">
+			Go back home
 		</Button>
 	</main>
 </Layout>
